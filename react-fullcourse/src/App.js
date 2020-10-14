@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Child from './components/child';
 
-function App() {
+function App(props) {
+  console.log(props.data);
   return (
     <>
     <h2>React JS Full course - Course particians- Video</h2>
@@ -19,6 +21,7 @@ function App() {
       <li>No.104-128 = Formik</li>
       <li>No.129 - 151 = Redux, contect, Thunk</li>
     </ul>
+    <Child data={props.data}/>
     </>
   );
 }

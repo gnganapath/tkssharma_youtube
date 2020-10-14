@@ -12,7 +12,9 @@ class Hello extends React.Component {
   }
 }
 
-ReactDOM.render(  <React.StrictMode>    <App />  </React.StrictMode>,  document.getElementById('root'));
+const names = ["tks", "codelabs"];
+
+ReactDOM.render(  <React.StrictMode>    <App  data={names}/>  </React.StrictMode>,  document.getElementById('root'));
 //ReactDOM.render(     <Hello />  ,  document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
